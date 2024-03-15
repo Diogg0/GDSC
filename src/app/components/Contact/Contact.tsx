@@ -8,10 +8,10 @@ type ContactProps = {
 const Contact:React.FC<ContactProps> = () => {
     
     return <>
-        <div className="w-screen h-screen bg-white mt-32">
-            <h1 className="text-6xl font-medium ml-20 pt-20">Contact:</h1>
-            <div className="w-full h-1/2 bg-white mt-20 flex items-center justify-center space-x-20">
-                <div className="w-1/4 h-full bg-gred rounded-2xl flex items-center flex-col text-white ">
+        <div className="w-screen sm:h-screen bg-yellow-200 sm:mt-32 text-center">
+            <h1 className="text-4xl sm:text-6xl font-medium sm:ml-20 sm:pt-20 items-center">Contact</h1>
+            <div className="w-full h-60 sm:h-1/2 mt-20 flex items-center justify-center space-x-20 bg-green-500">
+                <div className="w-1/4 h-1/2 sm:h-full bg-gred rounded-2xl flex items-center flex-col text-white ">
                     <Image className="pt-10" src="/hrishita.png" alt='hrishita' width={200} height={200}></Image>
                     <span className="inline-block text-3xl font-medium">Hrishita Pandey</span>
                     <span className="inline-block text-xl font-normal">WIT Head</span>

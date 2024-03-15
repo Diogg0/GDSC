@@ -22,7 +22,7 @@ const page:React.FC<pageProps> = () => {
         <Core id="about"/>
         <Contact/>
         <footer className="w-screen h-24 bg-white border-2 shadow-inner sticky border-slate-500">
-          <p className="text-center text-black pt-5">© 2024 GDSC RAIT</p>
+          <p className="text-center text-black pt-5">GDSC RAIT'24© </p>
         </footer>
       </div>
 

@@ -38,13 +38,13 @@ const Timer:React.FC<TimerProps> = ({id}) => {
     const isVisible = useIsVisible(ref1);
     
     return <>
-            <div id={id} className="w-screen h-96 relative z-40">
-            <div className="w-full h-full flex justify-center bg-zinc-50 drop-shadow-2xl">
+            <div id={id} className=" w-full h-72 flex items-center justify-center sm:w-screen sm:h-96 relative z-40">
+            <div className="w-full h-full sm:h-full flex justify-center bg-zinc-50 drop-shadow-2xl">
                     <div className="w-2/4">
                         <div className="w-full h-1/2 flex items-center justify-center font-semibold">
                             <h1 ref={ref1} className={`text-7xl duration-700 ease-in-out delay-200 ${isVisible ? "opacity-100" : "opacity-0" }`}>Zenith</h1>
                         </div>
-                        <div className="w-full h-1/2 text-6xl items-center justify-center">
+                        <div className="sm:w-full h-1/2 text-4xl sm:text-6xl items-center justify-center">
                             <CountdownTimer targetDate={targetDate} />
                             {/* <p className='inline-block text-gred'>20: </p>
                             <p className='inline-block text-gyellow'>20: </p>
