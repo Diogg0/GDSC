@@ -50,7 +50,7 @@ const Events:React.FC<EventsProps> = ({id}) => {
     const [isActive, setIsActive] = useState(false);
 
     const handleAnimation = () => {
-
+        if(!isActive){
         setIsActive(true);
         // Animation for card 1
         setCard1("transition-transform-opacity ease-in duration-300 -translate-x-20 opacity-0"+colors[topcard]);
@@ -92,6 +92,8 @@ const Events:React.FC<EventsProps> = ({id}) => {
         setTimeout(() => {
             setIsActive(false);
         }, 1300);
+
+        }
 
     }
 
