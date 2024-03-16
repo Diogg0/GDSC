@@ -42,7 +42,7 @@ const Timer:React.FC<TimerProps> = ({id}) => {
             <div className="w-full h-full sm:h-full flex justify-center bg-zinc-50 drop-shadow-2xl">
                     <div className="w-2/4">
                         <div className="w-full h-1/2 flex items-center justify-center font-semibold">
-                            <h1 ref={ref1} className={`text-7xl duration-700 ease-in-out delay-200 ${isVisible ? "opacity-100" : "opacity-0" }`}>Zenith</h1>
+                            <h1 ref={ref1} className={`text-7xl mt-10 sm:mt-0 duration-700 ease-in-out delay-200 ${isVisible ? "opacity-100" : "opacity-0" }`}>Zenith</h1>
                         </div>
                         <div className="sm:w-full h-1/2 text-4xl sm:text-6xl items-center justify-center">
                             <CountdownTimer targetDate={targetDate} />

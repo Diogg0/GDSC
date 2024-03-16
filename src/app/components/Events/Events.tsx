@@ -92,7 +92,7 @@ const Events:React.FC<EventsProps> = ({id}) => {
         setTimeout(() => {
             setIsActive(false);
         }, 1300);
-
+        
         }
 
     }

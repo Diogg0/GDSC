@@ -21,6 +21,9 @@ const config: Config = {
         "16":"16deg",  
         "24":"24deg",
       },
+      transitionDelay: {
+        '1200': '1200ms',
+      },
     },
   },
   plugins: [],
