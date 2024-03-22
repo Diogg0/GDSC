@@ -38,7 +38,7 @@ const Timer:React.FC<TimerProps> = ({id}) => {
     const isVisible = useIsVisible(ref1);
     
     return <>
-            <div id={id} className=" w-full h-72 flex items-center justify-center sm:w-screen sm:h-96 relative z-40">
+            <div id={id} className=" w-full h-72 flex items-center justify-center sm:pt-20 sm:w-screen sm:h-96 relative z-40">
             <div className="w-full h-full sm:h-full flex justify-center bg-zinc-50 drop-shadow-2xl">
                     <div className="w-2/4">
                         <div className="w-full h-1/2 flex items-center justify-center font-semibold">
