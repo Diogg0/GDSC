@@ -14,10 +14,11 @@ type pageProps = {
 const page:React.FC<pageProps> = () => {
   
   return <>
-  <Head>
-    <link rel="icon" href="/favicon.ico" />
-  </Head>
+    <Head>
+      <link rel="icon" href="/favicon.ico"/>
+    </Head>
     <meta name="viewport" content="width=device-width, initial-scale=1 height=device-height" />
+
       <div className="overflow-hidden">
         <Navbar />
         <Timer id="home"/>
