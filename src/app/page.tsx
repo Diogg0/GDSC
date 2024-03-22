@@ -5,6 +5,7 @@ import About from './components/About/About';
 import Events from './components/Events/Events';
 import Core from './components/Core/Core';
 import Contact from './components/Contact/Contact';
+import Head from 'next/head';
 
 type pageProps = {
   
@@ -13,6 +14,9 @@ type pageProps = {
 const page:React.FC<pageProps> = () => {
   
   return <>
+  <Head>
+    <link rel="icon" href="/favicon.ico" />
+  </Head>
     <meta name="viewport" content="width=device-width, initial-scale=1 height=device-height" />
       <div className="overflow-hidden">
         <Navbar />
