@@ -13,7 +13,6 @@ export function useIsVisible(ref: RefObject<Element>): boolean {
     useEffect(() => {
       const observer = new IntersectionObserver(([entry]) => {
           setIntersecting(entry.isIntersecting);
-          observer.disconnect()
       });
       
       if (ref.current) {
