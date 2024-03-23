@@ -58,7 +58,7 @@ const Events:React.FC<EventsProps> = ({id}) => {
     {name:"Schrödinger's Hunt", desc:"Teams of 3 to 4 embark on a two-round challenge, beginning with physics simulations and transitioning to debugging code to reveal hidden images. Assembled images form a larger picture of a location within RAIT, where teams must locate and explore boxes embodying Schrödinger's superposition paradox—its contents remain a mystery until opened.", link:"https://forms.gle/ExjjNBYASF2dBGfD7", fee:" Rs.50 per head"},
     {name:"8 ball pool", desc:"1v1 pool match online with your companion to test your skills on the pool table.",link:"https://forms.gle/8eUAdKi5Kk9WSSHm7", fee:" Rs.50 per head"},
     {name:"BGMI", desc:"1v1 bgmi match to test your tactical skills on ground",link:"https://forms.gle/f8StZCBRgsA7mMT67", fee:" Rs.100 per head"},
-    {name:"FIFA'23", desc:"Bringing the excitement of football onto the screen and showcase your skills to win the match", link:"https://forms.gle/epSWzMdPxUcPxJKU6", fee:" Rs.100 per head"}
+    {name:"FIFA'24", desc:"Bringing the excitement of football onto the screen and showcase your skills to win the match", link:"https://forms.gle/epSWzMdPxUcPxJKU6", fee:" Rs.100 per head"}
     ];
 
     const [card1, setCard1] = useState("ease-in duration-300 delay-1000"+colors[topcard]);
