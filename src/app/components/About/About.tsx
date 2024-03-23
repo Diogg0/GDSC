@@ -7,27 +7,32 @@ type AboutProps = {
 };
 
 export function useIsVisible(ref: RefObject<Element>): boolean {
-    const [isIntersecting, setIntersecting] = useState<boolean>(false);
-  
-    useEffect(() => {
-      const observer = new IntersectionObserver(([entry]) => {
-          setIntersecting(entry.isIntersecting);
-      });
-      
-      if (ref.current) {
-        observer.observe(ref.current);
-      }
-      
-      return () => {
-        if (ref.current) {
-          observer.unobserve(ref.current);
+  const [isIntersecting, setIntersecting] = useState<boolean>(false);
+  const [hasAnimated, setHasAnimated] = useState<boolean>(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(([entry]) => {
+        if (entry.isIntersecting && !hasAnimated) {
+            setIntersecting(true);
+            setHasAnimated(true);
         }
-        observer.disconnect();
-      };
-    }, [ref]);
-  
-    return isIntersecting;
+    });
+    
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+    
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+      observer.disconnect();
+    };
+  }, [ref, hasAnimated, isIntersecting]);
+
+  return isIntersecting;
 }
+
 
 
 

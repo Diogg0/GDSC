@@ -22,10 +22,14 @@ var event4 = 3;
 
 export function useIsVisible(ref: RefObject<Element>): boolean {
     const [isIntersecting, setIntersecting] = useState<boolean>(false);
+    const [hasAnimated, setHasAnimated] = useState<boolean>(false);
   
     useEffect(() => {
       const observer = new IntersectionObserver(([entry]) => {
-          setIntersecting(entry.isIntersecting);
+          if (entry.isIntersecting && !hasAnimated) {
+              setIntersecting(true);
+              setHasAnimated(true);
+          }
       });
       
       if (ref.current) {
@@ -38,10 +42,11 @@ export function useIsVisible(ref: RefObject<Element>): boolean {
         }
         observer.disconnect();
       };
-    }, [ref]);
+    }, [ref, hasAnimated, isIntersecting]);
   
     return isIntersecting;
 }
+
 
 const Events:React.FC<EventsProps> = ({id}) => {
 
