@@ -25,7 +25,7 @@ const page:React.FC<pageProps> = () => {
         <About/>
         <Events id="events"/>
         <Core id="about"/>
-        <Contact/>
+        <Contact id="contact"/>
         <footer className="w-screen h-24 bg-white border-2 shadow-inner sticky border-slate-500">
           <p className="text-center text-black pt-5">GDSC RAIT'24© </p>
         </footer>

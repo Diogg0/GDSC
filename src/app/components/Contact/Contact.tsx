@@ -2,13 +2,13 @@ import React from 'react';
 import Image from 'next/image';
 
 type ContactProps = {
-    
+    id:string;
 };
 
-const Contact:React.FC<ContactProps> = () => {
+const Contact:React.FC<ContactProps> = ({id}) => {
     
     return <>
-        <div className="w-screen sm:h-screen sm:mt-32 text-center">
+        <div id={id} className="w-screen sm:h-screen sm:mt-32 text-center">
             <h1 className="text-4xl sm:text-6xl font-medium sm:pt-20 items-center">Contact</h1>
             <div className="w-full h-60 sm:h-1/2 sm:mt-20 flex items-center justify-center space-x-2 sm:space-x-20">
                 <div className="w-32 sm:w-1/4 h-2/3 sm:h-full bg-gred rounded-2xl flex items-center flex-col text-white ">

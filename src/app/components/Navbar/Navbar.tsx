@@ -27,6 +27,13 @@ const handleAbout = () => {
     }
 }
 
+const handleContact = () => {
+    const element = document.getElementById('contact');
+    if(element){
+        element.scrollIntoView({behavior: "smooth"});
+    }
+}
+
 const navbar:React.FC<navbarProps> = () => {
     
     return <>
@@ -37,7 +44,7 @@ const navbar:React.FC<navbarProps> = () => {
                 <button onClick={handleHome} className= "text-gred group relative py-2 px-4 transition-transform duration-300 ease-in transform translate-y-0 hover:translate-y-[-5px]">Home</button>
                 <button onClick={handleEvents} className= "text-gyellow group relative py-2 px-4 transition-transform duration-300 ease-in transform translate-y-0 hover:translate-y-[-5px]">Events</button>
                 <button onClick={handleAbout} className= "text-ggreen group relative py-2 px-4 transition-transform duration-300 ease-in transform translate-y-0 hover:translate-y-[-5px]">About us</button>
-                <button className= "text-gblue group relative py-2 px-4 transition-transform duration-300 ease-in transform translate-y-0 hover:translate-y-[-5px]">Contact</button>
+                <button onClick={handleContact} className= "text-gblue group relative py-2 px-4 transition-transform duration-300 ease-in transform translate-y-0 hover:translate-y-[-5px]">Contact</button>
             </div>
         </nav>
     </>
