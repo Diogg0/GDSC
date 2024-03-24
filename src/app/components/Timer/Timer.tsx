@@ -33,7 +33,7 @@ export function useIsVisible(ref: RefObject<Element>): boolean {
 }
 
 const Timer:React.FC<TimerProps> = ({id}) => {
-    const targetDate = new Date('2024-03-28T09:00:00');
+    const targetDate = new Date('2024-03-27T09:00:00');
     const ref1= useRef<HTMLDivElement>(null);
     const isVisible = useIsVisible(ref1);
     
