@@ -57,8 +57,8 @@ const Events:React.FC<EventsProps> = ({id}) => {
     {name:"Cosmic Relay", desc:"Teams of four navigate through a series of commands appearing on their individual consoles, utilizing a variety of buttons with unique functionalities. As tasks escalate, communication among teammates becomes crucial to overcome challenges within the given time frame, leading to an exhilarating experience filled with chaos and camaraderie.", link:"https://forms.gle/WbG4T1YSdYVFmVFb8", fee:" Rs.50 per head"}, 
     {name:"Schrödinger's Hunt", desc:"Teams of 3 to 4 embark on a two-round challenge, beginning with physics simulations and transitioning to debugging code to reveal hidden images. Assembled images form a larger picture of a location within RAIT, where teams must locate and explore boxes embodying Schrödinger's superposition paradox—its contents remain a mystery until opened.", link:"https://forms.gle/ExjjNBYASF2dBGfD7", fee:" Rs.50 per head"},
     {name:"8 ball pool", desc:"1v1 pool match online with your companion to test your skills on the pool table.",link:"https://forms.gle/8eUAdKi5Kk9WSSHm7", fee:" Rs.50 per head"},
-    {name:"BGMI", desc:"1v1 bgmi match to test your tactical skills on ground",link:"https://forms.gle/f8StZCBRgsA7mMT67", fee:" Rs.100 per head"},
-    {name:"FIFA'24", desc:"Bringing the excitement of football onto the screen and showcase your skills to win the match", link:"https://forms.gle/epSWzMdPxUcPxJKU6", fee:" Rs.100 per head"}
+    {name:"BGMI", desc:"BGMI match to test your tactical skills on ground",link:"https://forms.gle/f8StZCBRgsA7mMT67", fee:" Team: Rs.30 per head", second:"Solo: Rs.50 per head"},
+    {name:"FIFA'24", desc:"Bringing the excitement of football onto the screen and showcase your skills to win the match", link:"https://forms.gle/epSWzMdPxUcPxJKU6", fee:" 2v2: Rs.80 per team", second:"    1v1 Rs.50 per head"}
     ];
 
     const [card1, setCard1] = useState("ease-in duration-300 delay-1000"+colors[topcard]);
@@ -160,7 +160,7 @@ const Events:React.FC<EventsProps> = ({id}) => {
             <div className="h-1/3 sm:mt-0 mt-32 w-2/5 sm:h-full sm:w-1/3 relative">
                 <div >
                     <p className="font-bold text-xl sm:text-3xl sm:mt-20 sm:ml-20 mt-5 ml-10">Events</p>
-                    <p className="font-medium text-xs sm:text-xl sm:ml-24 sm:mt-4 mt-3 ml-10">{events[event1]["name"]}: {events[event1]["fee"]}</p>
+                    <p className="font-medium text-xs sm:text-xl sm:ml-24 sm:mt-4 mt-3 ml-10">{events[event1]["name"]}: {events[event1]["fee"]} <br></br> {events[event1]["name"] == "BGMI" || events[event1]["name"] == "FIFA'24" ? events[event1]["second"] : null}</p>
                     
                     
                         <Link href={events[event1]["link"]}>
