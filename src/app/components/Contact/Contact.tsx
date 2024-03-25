@@ -15,7 +15,7 @@ const Contact:React.FC<ContactProps> = ({id}) => {
                     <Image className="w-20 pt-2 sm:w-48 sm:pt-10" src="/hrishita.png" alt='hrishita' width={200} height={200}></Image>
                     <span className="inline-block text-xs sm:text-3xl font-medium">Hrishita Pandey</span>
                     <span className="inline-block text-xs sm:text-xl sm:font-normal">WIT Head</span>
-                    <span className="inline-block text-xs sm:text-xl sm:font-normal">7263002829</span>
+                    <span className="inline-block text-xs sm:text-xl sm:font-normal">8828231847</span>
                 </div>
 
                 <div className="w-32 sm:w-1/4 h-2/3 sm:h-full bg-gblue rounded-2xl flex items-center flex-col text-white ">
@@ -29,7 +29,7 @@ const Contact:React.FC<ContactProps> = ({id}) => {
                     <Image className="w-20 pt-2 sm:w-48 sm:pt-10" src="/sharvil.png" alt='sharvil' width={200} height={200}></Image>
                     <span className="inline-block text-xs sm:text-3xl font-medium">Sharvil Patil</span>
                     <span className="inline-block text-xs sm:text-xl sm:font-normal">Design Head</span>
-                    <span className="inline-block text-xs sm:text-xl sm:font-normal">7263002829</span>
+                    <span className="inline-block text-xs sm:text-xl sm:font-normal">9172853310</span>
                 </div>
 
                 {/* <div className="w-1/4 h-full bg-gblue rounded-2xl flex items-center flex-col text-white ">
